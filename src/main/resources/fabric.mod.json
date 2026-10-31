@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "tpahunter",
+  "version": "${version}",
+  "name": "TPA Hunter",
+  "description": "Scannt den Chat nach TPA-Anfragen, prüft die Inventare (/invsee) im Hintergrund und filtert nach Items.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.tpahunter.TpaHunterClient"]
+  },
+  "mixins": ["tpahunter.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
